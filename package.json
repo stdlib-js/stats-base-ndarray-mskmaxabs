@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-ndarray-mskmaxabs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Calculate the maximum absolute value of a one-dimensional ndarray according to a mask.",
   "license": "Apache-2.0",
   "author": {
