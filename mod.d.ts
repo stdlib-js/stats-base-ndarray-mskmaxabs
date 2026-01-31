@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the maximum absolute value of a one-dimensional ndarray according to a mask.
+* Calculates the maximum absolute value of a one-dimensional ndarray according to a mask.
 *
-* @module @stdlib/stats-base-ndarray-mskmaxabs
+* @param arrays - array-like object containing an input ndarray and a mask ndarray
+* @returns maximum absolute value
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var mskmaxabs = require( '@stdlib/stats-base-ndarray-mskmaxabs' );
 *
 * var xbuf = [ 1.0, -5.0, 4.0, 2.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -36,12 +40,9 @@
 * var v = mskmaxabs( [ x, mask ] );
 * // returns 5.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function mskmaxabs<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = mskmaxabs;
