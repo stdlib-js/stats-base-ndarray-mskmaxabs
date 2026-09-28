@@ -41,32 +41,14 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-ndarray-mskmaxabs
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var mskmaxabs = require( '@stdlib/stats-base-ndarray-mskmaxabs' );
+import mskmaxabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mskmaxabs@deno/mod.js';
 ```
 
 #### mskmaxabs( arrays )
@@ -74,7 +56,7 @@ var mskmaxabs = require( '@stdlib/stats-base-ndarray-mskmaxabs' );
 Computes the maximum absolute value of a one-dimensional ndarray according to a mask.
 
 ```javascript
-var vector = require( '@stdlib/ndarray-vector-ctor' );
+import vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-ctor@deno/mod.js';
 
 var x = vector( [ 1.0, -5.0, 4.0, 2.0 ], 'generic' );
 var mask = vector( [ 0, 0, 1, 0 ], 'uint8' );
@@ -112,10 +94,10 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random-uniform' );
-var bernoulli = require( '@stdlib/random-bernoulli' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var mskmaxabs = require( '@stdlib/stats-base-ndarray-mskmaxabs' );
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-uniform@deno/mod.js';
+import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-bernoulli@deno/mod.js';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+import mskmaxabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-mskmaxabs@deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
@@ -155,7 +137,7 @@ console.log( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
